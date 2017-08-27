@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Images Editor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="myCanvas">
+    <div class="edit_panel">
+      <h1>Edit Panel</h1>
+      <form action="">
+        <label for="file">
+          <input type="text" name="file" id="myImg" class='border' placeholder="image url">
+        </label>
+        <button id='addMyImg' type="button" class='border'> uppload images</button>
+        <label for="color">
+          <input type="color" name="color" id="myColor" class='border'>
+        </label>
+        <label for="lineWidth">
+          <select id="lineWidth" class='border'>
+            <option value="5">5px</option>
+            <option value="8">8px</option>
+            <option value="10">10px</option>
+            <option value="16">16px</option>
+            <option value="20">20px</option>
+            <option value="25">25px</option>
+          </select>
+        </label>
+        <button id='clearCanvas' type="button" class='border'> Clear </button>
+      </form>
+    </div>
+    <canvas id="myImagesEditor" width="500" height="500" style="border:1px solid #efefef;"></canvas>
+  </div>
+  <!-- <script src="app.js"></script> -->
+  <script src="app.build.js"></script>
+</body>
+
+</html>

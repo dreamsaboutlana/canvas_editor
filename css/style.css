@@ -1,0 +1,48 @@
+#myCanvas {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial;
+}
+
+form {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.border {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 30px;
+  background: transparent;
+}
+
+button#clearCanvas,
+button#addMyImg {
+  background-color: transparent;
+}
+
+input#myColor {
+  height: 26px;
+  vertical-align: middle;
+  background: transparent;
+}
+
+select#lineWidth {
+  width: 55px;
+  background-color: white;
+}
+
+input[type="text"] {
+  width: 90px;
+  height: 26px;
+  vertical-align: middle;
+}
+
+input[type="file" i]::-webkit-file-upload-button {
+  display: none;
+}
