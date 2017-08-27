@@ -44,7 +44,6 @@ class Editor {
     }
   }
 
-
   imgUrl() {
     let pushImg = document.getElementById('addMyImg');
     pushImg.onclick = e => {
@@ -53,11 +52,9 @@ class Editor {
     }
   };
 
-
   events() {
 
     this.canvas.onmousedown = e => {
-      console.log('down');
       this.isDown = true;
       this.startX = parseInt(e.layerX);
       this.startY = parseInt(e.layerY);
@@ -72,11 +69,11 @@ class Editor {
       let endY = parseInt(e.layerY);
       this.draw(endX, endY);
     }
+    
     this.clearCanvas();
   }
 
   init() {
-
     this.events();
     this.imgUrl();
   }
